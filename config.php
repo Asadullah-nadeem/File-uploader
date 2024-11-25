@@ -1,10 +1,10 @@
 <?php
 define('DB_HOST', 'localhost');
-define('DB_NAME', '*************');
-define('DB_USER', '*************');
-define('DB_PASS', '**************');
+define('DB_NAME', '');
+define('DB_USER', '');
+define('DB_PASS', '');
 define('UPLOAD_DIR', 'uploads/');
-define('BASE_URL', 'https://url.in/');
+define('BASE_URL', 'https://bucket.codeaxe.co.in/');
 function getDatabaseConnection() {
     try {
         $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);

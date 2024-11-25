@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation - Upload Files Using API</title>
+    <title>Documentation - Upload Image Using API</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 min-h-screen">
     <header class="bg-indigo-600 text-white py-6">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-3xl md:text-4xl font-extrabold">File Upload Documentation</h1>
+            <h1 class="text-3xl md:text-4xl font-extrabold">Image Upload Documentation</h1>
             <p class="mt-2 text-lg">Learn how to use the API for seamless file uploads.</p>
             <a href="index.php" target="_blank" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105">
         Home
@@ -71,11 +71,11 @@ const response = await fetch('upload_api.php', {
                     <!-- Using Curl -->
                     <li>
                         <strong>Direct Curl Command:</strong>
-                        <p class="mt-2">Use this command in your terminal to upload a file:</p>
+                        <p class="mt-2">Use this command in your terminal to upload a Image:</p>
                         <pre class="bg-gray-100 p-4 rounded-lg text-gray-800 overflow-x-auto">
 curl -X POST https://bucket.codeaxe.co.in/upload_api.php \
 -H "API_KEY: your_api_key_here" \
--F "image=@/path/to/your/anyfile"
+-F "image=@/path/to/your/image.png"
                         </pre>
                     </li>
                 </ol>
@@ -86,7 +86,7 @@ curl -X POST https://bucket.codeaxe.co.in/upload_api.php \
                     <pre class="bg-green-100 p-4 rounded-lg text-green-800 overflow-x-auto">
 {
   "success": "Image uploaded successfully.",
-  "file_url": "https://bucket.codeaxe.co.in/uploads/uniquekey/anyfile"
+  "file_url": "https://bucket.codeaxe.co.in/uploads/uniquekey/image.png"
 }
                     </pre>
                 </div>

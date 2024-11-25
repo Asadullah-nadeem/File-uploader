@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload | CodeAxe</title>
+    <title>Image Upload | CodeAxe</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Apply the theme preference on page load
@@ -21,14 +21,14 @@
     <header class="bg-indigo-600 dark:bg-indigo-800 text-white py-6 shadow-lg">
         <div class="container mx-auto flex justify-between items-center px-6">
             <div>
-                <h1 class="text-4xl font-extrabold">File Upload Service</h1>
+                <h1 class="text-4xl font-extrabold">Image Upload Service</h1>
                 <p class="mt-2 text-lg">Upload your files seamlessly with ease.</p>
                 <a href="documentation.php" target="_blank" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105">
                     View Documentation
                 </a>
             </div>
             <button onclick="toggleTheme()" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
-                Day/Night
+                Demo Website
             </button>
         </div>
     </header>
