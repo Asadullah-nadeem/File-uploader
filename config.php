@@ -1,8 +1,8 @@
 <?php
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'codeaxe2_bucket');
-define('DB_USER', 'codeaxe2_bucketbucket');
-define('DB_PASS', '&t#NA3J@qKU.');
+define('DB_NAME', '*************');
+define('DB_USER', '*************');
+define('DB_PASS', '**************');
 define('UPLOAD_DIR', 'uploads/');
 define('BASE_URL', 'https://url.in/');
 function getDatabaseConnection() {
@@ -14,4 +14,4 @@ function getDatabaseConnection() {
         die("Database connection failed: " . $e->getMessage());
     }
 }
-?>
+

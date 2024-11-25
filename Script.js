@@ -1,3 +1,5 @@
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
 async function uploadImage() {
     const apiKey = document.getElementById('api_key').value;
     const image = document.getElementById('image').files[0];
@@ -15,9 +17,9 @@ async function uploadImage() {
         const response = await fetch('upload_api.php', {
             method: 'POST',
             headers: {
-                'API_KEY': apiKey 
+                'API_KEY': apiKey,
             },
-            body: formData
+            body: formData,
         });
 
         const result = await response.json();
@@ -33,3 +35,30 @@ async function uploadImage() {
         document.getElementById('responseMessage').classList.add("text-red-500");
     }
 }
+
+function toggleModal() {
+    const modal = document.getElementById('subscribeModal');
+    modal.classList.toggle('hidden');
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    html.classList.toggle('dark');
+    localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+}
+async function fetchIpAddress() {
+    try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        document.getElementById('ipAddress').textContent = data.ip;
+    } catch (error) {
+        document.getElementById('ipAddress').textContent = 'Unable to fetch IP';
+    }
+}
+fetchIpAddress();
+
+
+const currentURL = window.location.href;
+    const urlElement = document.getElementById('currentURL');
+    urlElement.textContent = currentURL;
+    urlElement.href = currentURL;

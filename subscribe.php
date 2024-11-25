@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'])) {
             if ($stmt->execute(['email' => $email, 'api_key' => $apiKey])) {
                 $subject = "Your API Key for Image Upload";
                 $message = "Thank you for subscribing! Here is your API key:\n\n" . $apiKey;
-                $headers = "From: no-reply@url.in";
+                $headers = "From: no-reply@bucket.codeaxe.co.in";
 
                 if (mail($email, $subject, $message, $headers)) {
                     $message = "Subscription successful! Your API key has been sent to your email.";
