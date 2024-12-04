@@ -2,12 +2,12 @@ CREATE DATABASE image_bucket;
 
 USE image_bucket;
 
-CREATE TABLE images (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    unique_key VARCHAR(255) NOT NULL UNIQUE,
-    file_name VARCHAR(255) NOT NULL,
-    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+-- CREATE TABLE images (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     unique_key VARCHAR(255) NOT NULL UNIQUE,
+--     file_name VARCHAR(255) NOT NULL,
+--     uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
 
 CREATE TABLE subscribers (
     id INT AUTO_INCREMENT PRIMARY KEY,
